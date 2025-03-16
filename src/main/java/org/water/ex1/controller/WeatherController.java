@@ -19,6 +19,7 @@ public class WeatherController {
         this.weatherRepository = weatherRepository;
     }
 
+    //http://localhost:8080/api/weather/data
     @GetMapping("/data")
     public List<WeatherData> getWeatherData() {
         return weatherRepository.findAll();
